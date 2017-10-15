@@ -62,7 +62,7 @@ public:
 }
 //...
 void Object::process(){
-   spts_obj.emplace_back(this);
+   spts_obj.emplace_back(shared_from_this());
 }
 ```
 **注意一定是`public`继承!!!**
